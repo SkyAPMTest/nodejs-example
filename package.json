@@ -7,7 +7,7 @@
     "egg": "^2.2.1",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.5.0",
-    "sw-egg-script": "0.0.1"
+    "skywalking-egg-require": "0.1.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -23,16 +23,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-example",
-    "stop": "egg-scripts stop --title=egg-server-example",
-    "dev": "egg-bin dev --require sw-egg-script --sw_pplication_code=test",
-    "debug": "egg-bin debug --require sw-egg-script ",
-    "test": "npm run lint -- --fix && npm run test-local",
-    "test-local": "egg-bin test",
-    "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "dev": "egg-bin dev --require sw-egg-script --sw_pplication_code=test --sw_direct_Servers=localhost:11800",
   },
   "ci": {
     "version": "8"

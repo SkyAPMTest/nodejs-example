@@ -1,14 +1,12 @@
-# example
-
-
+# Skywalking egg example
 
 ## QuickStart
 
-<!-- add docs here for user -->
+### Deploy skywalking backend
+1. Download releases from Apache official website. [Link](http://skywalking.apache.org/downloads/)
+2. Deploy backend on local. See [collector in standalone mode doc](Deploy-backend-in-standalone-mode.md)
 
-see [egg docs][egg] for more detail.
-
-### Development
+### Deploy egg example
 
 ```bash
 $ npm i
@@ -16,18 +14,8 @@ $ npm run dev
 $ open http://localhost:7001/
 ```
 
-### Deploy
+### View Trace Data
 
 ```bash
-$ npm start
-$ npm stop
+$ open http://localhost:8080/
 ```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
