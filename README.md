@@ -4,5 +4,5 @@ This project has contain two scenario. One is the simple project that wrote by e
 
 ## Deploy documents
 
-1. [Simple project deploy document](simple-project)
+1. [Simple project](simple-project)
 2. [Cross project](cross-project)
