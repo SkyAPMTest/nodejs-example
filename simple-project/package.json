@@ -1,0 +1,37 @@
+{
+  "name": "Skywalking-egg-example",
+  "version": "1.0.0",
+  "description": "The egg exmple for test Skywalking ",
+  "private": true,
+  "dependencies": {
+    "egg": "^2.2.1",
+    "egg-mysql": "^3.0.0",
+    "egg-scripts": "^2.5.0",
+    "skywalking-egg-require": "^0.1.2"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^6.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "dev": "egg-bin dev --require skywalking-egg-require --sw_pplication_code=egg-test --sw_direct_Servers=localhost:11800"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkywalkingTest/egg-example.git"
+  },
+  "author": "Zhang Xin",
+  "license": "Apache-2.0"
+}
