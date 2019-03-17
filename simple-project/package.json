@@ -7,7 +7,9 @@
     "egg": "^2.2.1",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.5.0",
-    "skywalking-egg-require": "^0.1.2"
+    "egg-socket.io": "^4.1.5",
+    "randomatic": "^3.1.1",
+    "skyapm-egg-require": "^0.1.4"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -23,7 +25,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "dev": "egg-bin dev --require skywalking-egg-require --sw_pplication_code=egg-test --sw_direct_Servers=localhost:11800"
+    "dev": "egg-bin dev --require skyapm-egg-require --sw_pplication_code=egg-test --sw_direct_Servers=127.0.0.1:11800"
   },
   "ci": {
     "version": "8"

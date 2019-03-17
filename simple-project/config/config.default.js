@@ -11,13 +11,27 @@ module.exports = appInfo => {
   config.mysql = {
     client: {
       host: 'localhost',
-      port: '3307',
+      port: '3306',
       user: 'root',
       password: 'root',
       database: 'test',
     },
     app: true,
     agent: false,
+  };
+
+  config.io = {
+    init: { }, // passed to engine.io
+    namespace: {
+      '/': {
+        connectionMiddleware: ['auth'],
+        packetMiddleware: [],
+      },
+    },
+    redis: {
+      host: '127.0.0.1',
+      port: 6379
+    }
   };
   return config;
 };
