@@ -23,7 +23,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --workers=1 --port 17001 --require skywalking-egg-require --sw_pplication_code=egg-project-B --sw_direct_Servers=localhost:11800"
+    "start": "egg-scripts start --workers=1 --port 17001 --require skyapm-egg-require --sw_pplication_code=egg-project-B --sw_direct_Servers=localhost:11800"
   },
   "ci": {
     "version": "8"
